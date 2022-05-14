@@ -53,12 +53,19 @@
 //     hosting::add_to_waitlist();
 // }
 mod front_of_house;
+mod test_struct;
 
+use String;
 // pub use crate::front_of_house::hosting;
+// use test_struct;
 
 pub fn eat_at_restaurant() {
     front_of_house::aaa();
     front_of_house::hosting::add_to_waitlist();
     front_of_house::hosting::add_to_waitlist();
     front_of_house::hosting::add_to_waitlist();
+    let a = test_struct::Breakfast {
+        toast: String::from("hellp"),
+        seasonal_fruit: String::from("hellp"),
+    };
 }
